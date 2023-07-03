@@ -1,1 +1,1 @@
-# organ-minds
+# OrganMinds
