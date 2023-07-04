@@ -239,7 +239,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileType: 0
   bratwurstManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
-  iOSRequireARKit: 0
+  iOSRequireARKit: 1
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   shaderPrecisionModel: 0
@@ -755,7 +755,8 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    iPhone: UNITY_XR_ARKIT_LOADER_ENABLED;UNITY_XR_ARKIT_FACE_TRACKING_ENABLED;UNITY_CCU
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
