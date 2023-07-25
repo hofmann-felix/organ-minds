@@ -10,16 +10,16 @@ public class TestConnect : MonoBehaviourPunCallbacks
     private void Start()
     {
         print("Connecting to server..");
-        //PhotonNetwork.NickName = MasterManager.GameSettings.NickName;
-        //PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
-        PhotonNetwork.GameVersion = "0.0.1";
+        PhotonNetwork.NickName = MasterManager.GameSettings.NickName;
+        PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
+        //PhotonNetwork.GameVersion = "0.0.1";
         PhotonNetwork.ConnectUsingSettings();
     }
 
     public override void OnConnectedToMaster()
     {
         print("Connected to server!");
-        //print(PhotonNetwork.LocalPlayer.NickName);
+        print("Nickname: " + PhotonNetwork.LocalPlayer.NickName);
         //Debug.Log("OnConnectedToMaster() was called by PUN");
     }
 
