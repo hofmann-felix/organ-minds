@@ -170,6 +170,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/VisualScripting/VS_OnTrackablesChangedUserFacing/VS_OnTrackablesChangedUserFacing.unity
     guid: d966c4d085949488799fa16be4c4455e
+  - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: f1e9b3f6be620df40bf1da554da9175a
+  - enabled: 1
+    path: Assets/Scenes/CreateRooms.unity
+    guid: dabf8cab2ace5384db7245d8bab6a111
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c52d3bb36b4c86f47af54ab9c7a02589,
       type: 2}
