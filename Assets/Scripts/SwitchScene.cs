@@ -5,8 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
-      public void NextScene()
+    public void RoomsScene()
     {
-        SceneManager.LoadScene("HumanBodyTracking3D");
+        SceneManager.LoadScene("CreateRooms");
     }
+
+    public void StartGameSzene()
+    {
+        SceneManager.LoadScene("StartGame");
+    }
+
+    public void BodyTracking()
+    {
+    SceneManager.LoadScene("HumanBodyTracking3D");
+    }
+
+
 }
