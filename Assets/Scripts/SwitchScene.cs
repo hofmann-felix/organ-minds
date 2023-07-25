@@ -7,6 +7,6 @@ public class SwitchScene : MonoBehaviour
 {
       public void NextScene()
     {
-        SceneManager.LoadScene("BlankAR");
+        SceneManager.LoadScene("HumanBodyTracking3D");
     }
 }
