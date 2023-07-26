@@ -827,6 +827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 887590805}
+  - component: {fileID: 887590806}
   m_Layer: 5
   m_Name: CreateRoom
   m_TagString: Untagged
@@ -856,6 +857,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &887590806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887590804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6fb76d699b53f45b421cb7a76e98d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _roomName: {fileID: 436069399}
 --- !u!1 &1112282756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,9 +1469,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1554481233}
-        m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
-        m_MethodName: StartGameSzene
+      - m_Target: {fileID: 887590806}
+        m_TargetAssemblyTypeName: CreateRoomMenu, Assembly-CSharp
+        m_MethodName: OnClick_CreateRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
