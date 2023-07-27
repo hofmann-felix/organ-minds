@@ -12,6 +12,13 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
     private TextMeshProUGUI _roomName;
 
 
+    private RoomsCanvases _roomsCanvases;
+
+    public void FirstInitialize(RoomsCanvases canvases)
+    {
+        _roomsCanvases = canvases;
+    }
+
 
     //[SerializedField]
     //private TextMeshPro _roomName;
@@ -38,6 +45,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         //base.OnCreateRoom();
         print("Created room successfully.");
         print("Room Name (2): " + _roomName.text);
+        _roomsCanvases.CurrentRoomCanvas.Show();
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
