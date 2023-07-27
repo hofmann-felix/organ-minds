@@ -8,11 +8,23 @@ public class RoomListingsMenu : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private Transform _content;
-
     [SerializeField]
     private RoomListing _roomListing;
 
     private List<RoomListing> _listings = new List<RoomListing>();
+    private RoomsCanvases _roomsCanvases; // evtl löschen
+
+    public void FirstInitialize(RoomsCanvases canvases) // evtl löschen
+    {
+        _roomsCanvases = canvases;
+    }
+
+
+    public override void OnJoinedRoom()
+    {
+        _roomsCanvases.CurrentRoomCanvas.Show();
+    }
+
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
