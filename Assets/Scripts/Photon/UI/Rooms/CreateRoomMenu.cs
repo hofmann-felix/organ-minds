@@ -29,6 +29,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         print("Room Name (1): " + _roomName.text);
         print(options);
         PhotonNetwork.JoinOrCreateRoom(_roomName.text, options, TypedLobby.Default);
+        //PhotonNetwork.CreateRoom(_roomName.text, options, TypedLobby.Default);
     }
 
 
