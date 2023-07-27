@@ -14,6 +14,7 @@ public class CurrentRoomCanvas : MonoBehaviour
     public void Show()
     {
         gameObject.SetActive(true);
+        print("Should set current gameObject Visible");
     }
 
     public void Hide()

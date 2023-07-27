@@ -46,6 +46,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         print("Created room successfully.");
         print("Room Name (2): " + _roomName.text);
         _roomsCanvases.CurrentRoomCanvas.Show();
+        print("Should show other canvas");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
