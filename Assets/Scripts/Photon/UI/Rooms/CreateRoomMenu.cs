@@ -22,8 +22,12 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsConnected)
             return;
 
+        print("PhotonNetwork still connected (!)");
+
         RoomOptions options = new RoomOptions();
         options.MaxPlayers = 2;
+        print("Room Name (1): " + _roomName.text);
+        print(options);
         PhotonNetwork.JoinOrCreateRoom(_roomName.text, options, TypedLobby.Default);
     }
 
@@ -32,6 +36,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
     {
         //base.OnCreateRoom();
         print("Created room successfully.");
+        print("Room Name (2): " + _roomName.text);
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

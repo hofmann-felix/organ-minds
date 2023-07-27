@@ -21,6 +21,9 @@ public class TestConnect : MonoBehaviourPunCallbacks
         print("Connected to server!");
         print("Nickname: " + PhotonNetwork.LocalPlayer.NickName);
         //Debug.Log("OnConnectedToMaster() was called by PUN");
+
+        // Join Lobby
+        PhotonNetwork.JoinLobby();
     }
 
 
