@@ -19,6 +19,13 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
         GetCurrentRoomPlayers();
     }
 
+
+    public override void OnLeftRoom()
+    {
+        _content.DestroyChildren();
+    }
+
+
     private void GetCurrentRoomPlayers()
     {
         foreach (KeyValuePair <int, Player> playerInfo in PhotonNetwork.CurrentRoom.Players)
