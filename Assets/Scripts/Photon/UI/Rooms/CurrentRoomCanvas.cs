@@ -15,8 +15,8 @@ public class CurrentRoomCanvas : MonoBehaviour
     public void FirstInitialize(RoomsCanvases canvases)
     {
         _roomsCanvases = canvases;
-        //_playerListingsMenu.FirstInitialize(canvases);
-        //_leaveRoomMenu.FirstInitialize(canvases);
+        _playerListingsMenu.FirstInitialize(canvases);
+        _leaveRoomMenu.FirstInitialize(canvases);
     }
 
     public void Show()

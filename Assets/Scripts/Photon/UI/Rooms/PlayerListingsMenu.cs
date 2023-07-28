@@ -13,10 +13,16 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
     private PlayerListing _playerListing;
 
     private List<PlayerListing> _listings = new List<PlayerListing>();
+    private RoomsCanvases _roomsCanvases;
 
     private void Awake()
     {
         GetCurrentRoomPlayers();
+    }
+
+    public void FirstInitialize(RoomsCanvases canvases)
+    {
+        _roomsCanvases = canvases;
     }
 
 
