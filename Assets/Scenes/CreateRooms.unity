@@ -897,6 +897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed24fdd91243e5044b18a9a6acb1a871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerListingsMenu: {fileID: 0}
+  _leaveRoomMenu: {fileID: 0}
 --- !u!1 &602940893
 GameObject:
   m_ObjectHideFlags: 0
