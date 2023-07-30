@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Realtime;
+using Photon.Pun;
 
 public class SwitchScene : MonoBehaviour
 {
@@ -17,7 +19,17 @@ public class SwitchScene : MonoBehaviour
 
     public void BodyTracking()
     {
-    SceneManager.LoadScene("HumanBodyTracking3D");
+        SceneManager.LoadScene("HumanBodyTracking3D");
+    }
+
+    public void OrganMind1()
+    {
+        PhotonNetwork.LoadLevel(4);
+    }
+
+    public void QuizMaster1()
+    {
+        PhotonNetwork.LoadLevel(5);
     }
 
 
