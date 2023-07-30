@@ -176,6 +176,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreateRooms.unity
     guid: dabf8cab2ace5384db7245d8bab6a111
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 373342628264ee34c868e223c36aa79b
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c52d3bb36b4c86f47af54ab9c7a02589,
       type: 2}
