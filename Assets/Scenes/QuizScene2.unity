@@ -7948,7 +7948,7 @@ Transform:
   m_Father: {fileID: 1319991955}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1401462681
+--- !u!1001 &1648921791
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -7958,7 +7958,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000012269923148, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_Name
-      value: BrainHP
+      value: BrainHP (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_RootOrder
@@ -7966,23 +7966,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalScale.x
-      value: 600
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalScale.y
-      value: 600
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 545
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1137
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -138.8
       objectReference: {fileID: 0}
     - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8012,17 +8016,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1000012269923148, guid: 4d98f79a0d0e7044b9f5bfa2fea37885,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1648921794}
   m_SourcePrefab: {fileID: 100100000, guid: 4d98f79a0d0e7044b9f5bfa2fea37885, type: 3}
---- !u!4 &1401462682 stripped
+--- !u!4 &1648921792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013915375924, guid: 4d98f79a0d0e7044b9f5bfa2fea37885,
     type: 3}
-  m_PrefabInstance: {fileID: 1401462681}
+  m_PrefabInstance: {fileID: 1648921791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1648921793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012269923148, guid: 4d98f79a0d0e7044b9f5bfa2fea37885,
+    type: 3}
+  m_PrefabInstance: {fileID: 1648921791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1648921794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648921793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b7a0faff849421dae1b32a06c5cf79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725976994
 GameObject:
   m_ObjectHideFlags: 0
@@ -9041,7 +9071,7 @@ RectTransform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1401462682}
+  - {fileID: 1648921792}
   - {fileID: 2121257639}
   - {fileID: 1725976995}
   - {fileID: 1222886609}
@@ -9160,9 +9190,9 @@ Canvas:
   m_GameObject: {fileID: 2100945695}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1850924291}
+  m_PlaneDistance: 19
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
