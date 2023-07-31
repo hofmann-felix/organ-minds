@@ -22,6 +22,30 @@ public class SwitchScene : MonoBehaviour
         SceneManager.LoadScene("HumanBodyTracking3D");
     }
 
+    public void QuizScene1(){
+        SceneManager.LoadScene("QuizScene1");
+    }
+
+     public void QuizScene2(){
+        SceneManager.LoadScene("QuizScene2");
+    }
+
+     public void QuizScene3(){
+        SceneManager.LoadScene("QuizScene3");
+    }
+
+     public void QuizScene4(){
+        SceneManager.LoadScene("QuizScene4");
+    }
+
+     public void QuizScene5(){
+        SceneManager.LoadScene("QuizScene5");
+    }
+
+     public void QuizScene6(){
+        SceneManager.LoadScene("QuizScene6");
+    }
+
     public void OrganMind1()
     {
         PhotonNetwork.LoadLevel(4);
