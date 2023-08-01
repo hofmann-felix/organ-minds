@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Menu/MenuLoader.unity
     guid: 6688ff74f56714cfeb7c919bcdbfe269
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LogIn.unity
     guid: feca1deb68fa64ddc9a33c8bab32a54c
   - enabled: 0
@@ -173,22 +173,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/StartGame.unity
     guid: f1e9b3f6be620df40bf1da554da9175a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CreateRooms.unity
     guid: dabf8cab2ace5384db7245d8bab6a111
   - enabled: 0
     path: Assets/Scenes/Game2.unity
     guid: 373342628264ee34c868e223c36aa79b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 6709a9547d59ff84782ddd4de4dbef57
   - enabled: 0
     path: Assets/Scenes/Game 1.unity
     guid: 65154e51b19f422418eeed0318935dcf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene1.unity
     guid: 87a3e9c3498798e43b2f5c816b5a4a5a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene2.unity
     guid: 896fbf6395a024746b954783e1ee41f8
   - enabled: 0
