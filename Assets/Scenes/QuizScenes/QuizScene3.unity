@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18018535, g: 0.22559482, b: 0.30677685, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: -300}
+  m_AnchoredPosition: {x: 70, y: -462.99994}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2589832
@@ -209,31 +209,7 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1338007904}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2100945700}
-        m_TargetAssemblyTypeName: Delay, Assembly-CSharp
-        m_MethodName: PanelView
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 0
 --- !u!1 &254962379
 GameObject:
@@ -1002,7 +978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5684868f64d204a599440bed635b5775, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7afd02216f3fb4ca1b01eca9ce02633f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1078,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7afd02216f3fb4ca1b01eca9ce02633f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5684868f64d204a599440bed635b5775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1291,7 +1267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Frage 4:'
+  m_text: 'Frage 3:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -1516,7 +1492,7 @@ GameObject:
   - component: {fileID: 617058583}
   - component: {fileID: 617058584}
   m_Layer: 0
-  m_Name: Haut
+  m_Name: Herz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,7 +1517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 70, y: -162.99995}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &617058584
@@ -1590,7 +1566,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1338007904}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2100945700}
+        m_TargetAssemblyTypeName: Delay, Assembly-CSharp
+        m_MethodName: PanelView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &658130176
 GameObject:
@@ -1681,7 +1681,7 @@ GameObject:
   - component: {fileID: 659830282}
   - component: {fileID: 659830281}
   m_Layer: 0
-  m_Name: LungeText
+  m_Name: NierenText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lunge
+  m_text: Nieren
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -1987,7 +1987,7 @@ GameObject:
   - component: {fileID: 1072508881}
   - component: {fileID: 1072508882}
   m_Layer: 0
-  m_Name: Lunge
+  m_Name: Nieren
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2012,7 +2012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 300}
+  m_AnchoredPosition: {x: 70, y: 137}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1072508882
@@ -2158,107 +2158,6 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
---- !u!1001 &1219428309
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2096652783}
-    m_Modifications:
-    - target: {fileID: 1000013584612854, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_Name
-      value: GutsHP
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -138.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1000013584612854, guid: 8ed3d0a833aef5e468a637d9af251bac,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1219428312}
-  m_SourcePrefab: {fileID: 100100000, guid: 8ed3d0a833aef5e468a637d9af251bac, type: 3}
---- !u!4 &1219428310 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000013488251632, guid: 8ed3d0a833aef5e468a637d9af251bac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1219428309}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1219428311 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013584612854, guid: 8ed3d0a833aef5e468a637d9af251bac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1219428309}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1219428312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219428311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b7a0faff849421dae1b32a06c5cf79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1222886608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2245,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1222886613}
         m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
-        m_MethodName: QuizScene5
+        m_MethodName: Intermediate3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3099,147 +2998,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
---- !u!1 &1308636202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308636203}
-  - component: {fileID: 1308636205}
-  - component: {fileID: 1308636204}
-  m_Layer: 0
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1308636203
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308636202}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2096652783}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 770.02}
-  m_SizeDelta: {x: -177.4738, y: 1679.4783}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1308636204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308636202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Der Darm ist ein spannendes Organ in unserem Bauch. Er sieht aus wie ein
-    langer Schlauch und hat eine wichtige Aufgabe: die Verdauung! Der Darm hilft
-    dabei, all das leckere Essen, das wir essen, in kleinere St\xFCcke zu zerlegen,
-    damit unser K\xF6rper die N\xE4hrstoffe daraus aufnehmen kann.\n\nFun Fact: Unser
-    Darm ist so lang wie ein Walross! Wenn man ihn ausgestreckt messen k\xF6nnte,
-    w\xE4re er etwa 6 Meter lang!\n\n"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
-  m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1308636205
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308636202}
-  m_CullTransparentMesh: 1
 --- !u!1 &1319991952
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,7 +8030,7 @@ GameObject:
   - component: {fileID: 1837130183}
   - component: {fileID: 1837130182}
   m_Layer: 0
-  m_Name: HautText
+  m_Name: HerzText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8318,7 +8076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haut
+  m_text: Herz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -8752,6 +8510,149 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &1916678900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916678901}
+  - component: {fileID: 1916678903}
+  - component: {fileID: 1916678902}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1916678901
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916678900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2096652783}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 945}
+  m_SizeDelta: {x: -177.4738, y: 1895.7393}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1916678902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916678900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Das Herz hat eine wichtige Aufgabe: Es pumpt Blut durch unseren K\xF6rper,
+    damit alle Organe genug Sauerstoff und N\xE4hrstoffe bekommen.\n\nManchmal h\xF6rt
+    man, dass das Herz gebrochen werden kann, wenn man traurig ist. Aber das ist
+    nur ein Sprichwort. In Wirklichkeit kann das Herz nicht wirklich brechen. Es
+    kann sich jedoch bei starken Gef\xFChlen wie Liebe oder Trauer anders anf\xFChlen,
+    weil unser K\xF6rper auf Emotionen reagiert. Das Herz ist ein starkes Organ,
+    das uns am Leben h\xE4lt und daf\xFCr sorgt, dass wir uns bewegen und lachen
+    k\xF6nnen!"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
+  m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1916678903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916678900}
+  m_CullTransparentMesh: 1
 --- !u!1 &1940597806
 GameObject:
   m_ObjectHideFlags: 0
@@ -8810,7 +8711,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welches Organ im menschlichen Koerper ist das laengste?
+  m_text: "Welches Organ\n ist fuer den Transport von Blut im Menschlichen Koerper
+    verantwortlich?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -8888,6 +8790,107 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940597806}
   m_CullTransparentMesh: 1
+--- !u!1001 &1963072806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2096652783}
+    m_Modifications:
+    - target: {fileID: 1000011984012882, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_Name
+      value: HeartHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -138.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1000011984012882, guid: 35aefe7bbeb1c164bb8938ae245a38d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1963072809}
+  m_SourcePrefab: {fileID: 100100000, guid: 35aefe7bbeb1c164bb8938ae245a38d6, type: 3}
+--- !u!4 &1963072807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000011779374400, guid: 35aefe7bbeb1c164bb8938ae245a38d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1963072806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1963072808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011984012882, guid: 35aefe7bbeb1c164bb8938ae245a38d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1963072806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963072809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963072808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b7a0faff849421dae1b32a06c5cf79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2026952588
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,7 +9039,7 @@ GameObject:
   - component: {fileID: 2096652785}
   - component: {fileID: 2096652784}
   m_Layer: 0
-  m_Name: PanelInfoDarm
+  m_Name: PanelInfoHerz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9054,8 +9057,8 @@ RectTransform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1219428310}
-  - {fileID: 1308636203}
+  - {fileID: 1963072807}
+  - {fileID: 1916678901}
   - {fileID: 2121257639}
   - {fileID: 1222886609}
   m_Father: {fileID: 2100945699}
@@ -9280,7 +9283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Der Darm
+  m_text: Das Herz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
