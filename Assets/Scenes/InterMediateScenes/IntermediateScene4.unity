@@ -388,7 +388,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 330428529}
         m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
-        m_MethodName: TestScene5
+        m_MethodName: OrganDetectorMaster
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
