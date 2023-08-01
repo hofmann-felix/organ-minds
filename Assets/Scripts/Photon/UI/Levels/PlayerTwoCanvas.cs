@@ -9,6 +9,7 @@ public class PlayerCanvases : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = false;
         if (PhotonNetwork.IsMasterClient)
         {
             print("You are the Master client   !!!!!!!!!!!!!!!!!!");

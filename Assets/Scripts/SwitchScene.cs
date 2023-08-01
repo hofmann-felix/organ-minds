@@ -56,5 +56,20 @@ public class SwitchScene : MonoBehaviour
         PhotonNetwork.LoadLevel(5);
     }
 
+    public void OrganMind2()
+    {
+        PhotonNetwork.LoadLevel(6);
+    }
+
+    //public void QuizMaster2()
+    //{
+    //    PhotonNetwork.LoadLevel(7);
+    //}
+
+    public void Intermediate()
+    {
+        PhotonNetwork.LoadLevel(6);
+    }
+
 
 }
