@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Photon.Pun;
 
 public class Body : MonoBehaviour
 {
@@ -10,28 +12,89 @@ public class Body : MonoBehaviour
     public GameObject kidney;
     public GameObject liver;
     public GameObject lung;
+    public GameObject cross;
+    public GameObject currentOrganText;
+    GameObject[] organs = new GameObject[7];
+    int currentOrganIndex = 0;
+    public int initialOrganIndex = 0;
+    bool collidersAdjusted = false;
 
-    //Change me to change the touch phase used.
     TouchPhase touchPhase = TouchPhase.Ended;
+
+    int currentCrossVisibleTime = 0;
+    public int crossVisibleTime = 50;
+
+    int currentSuccessVisibleTime = 0;
+    public int successVisibleTime = 100;
 
     // Start is called before the first frame update
     void Start()
     {
-        brain.GetComponent<MeshRenderer>().enabled = false;
-        guts.GetComponent<MeshRenderer>().enabled = false;
-        heart.GetComponent<MeshRenderer>().enabled = false;
-        liver.GetComponent<MeshRenderer>().enabled = false;
+        organs = new GameObject[] { liver, brain, heart, guts, lung, kidney };
+        cross.SetActive(false);
 
-        kidney.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
-        kidney.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+        int currentOrganIndexFromLocalStorage = PlayerPrefs.GetInt("currentOrganIndex");
+        Debug.Log(currentOrganIndexFromLocalStorage);
 
-        lung.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
-        lung.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+        if (currentOrganIndexFromLocalStorage == 0)
+        {
+            PlayerPrefs.SetInt("currentOrganIndex", initialOrganIndex + 2);
+        }
+        else
+        {
+            currentOrganIndex = currentOrganIndexFromLocalStorage;
+            PlayerPrefs.SetInt("currentOrganIndex", currentOrganIndexFromLocalStorage + 2);
+        }
+        Debug.Log("Alive2!");
+
+        TextMeshProUGUI textmeshPro = currentOrganText.GetComponent<TextMeshProUGUI>();
+
+        textmeshPro.SetText($"Tippe auf {GetOrganText(organs[currentOrganIndex])} deines Mitspielers");
+
+        
+
+        for (int i = 0; i < organs.Length; i++)
+        {
+            GameObject currentOrgan = organs[i];
+            string currentOrganName = currentOrgan.transform.name;
+            if (i < currentOrganIndex)
+            {
+                if (currentOrganName == "Kidneys" || currentOrganName == "Lung")
+                {
+                    currentOrgan.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                    currentOrgan.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    currentOrgan.GetComponent<MeshRenderer>().enabled = true;
+                }
+            }
+            else
+            {
+                if (currentOrganName == "Kidneys" || currentOrganName == "Lung")
+                {
+                    currentOrgan.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+                    currentOrgan.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+                }
+                else
+                {
+                    currentOrgan.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+        }
+
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (currentSuccessVisibleTime > 0)
+        {
+            currentSuccessVisibleTime--;
+            if (currentSuccessVisibleTime == 0) PhotonNetwork.LoadLevel("IntermediateScene1");
+        }
+        //touch handler
         if (Input.touchCount == 1 && Input.GetTouch(0).phase == touchPhase)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -46,26 +109,102 @@ public class Body : MonoBehaviour
                 if (hit.collider != null)
                 {
                     GameObject touchedObject = hit.transform.gameObject;
+                    string touchedObjectName = touchedObject.transform.name;
 
-                    Debug.Log("Touched " + touchedObject.transform.name);
-                    HandleTouch(touchedObject);
+                    Debug.Log("Touched " + touchedObjectName);
+
+                    if (touchedObjectName == "Robot Colider")
+                    {
+                        HandleMissTouch(hit);
+                    }
+                    else
+                    {
+                        HandleOrganTouch(touchedObject);
+                    }
                 }
             }
         }
+
+        //cross logic
+        if (currentCrossVisibleTime == 0)
+        {
+            cross.SetActive(false);
+            currentCrossVisibleTime--;
+        }
+        else if (currentCrossVisibleTime > 0)
+        {
+            currentCrossVisibleTime--;
+        }
+
+
+        //collider logic
+        if (!collidersAdjusted)
+        {
+            for (int i = 0; i < organs.Length; i++)
+            {
+                GameObject currentOrgan = organs[i];
+                if (i == currentOrganIndex)
+                {
+                    currentOrgan.GetComponent<Collider>().enabled = true;
+                }
+                else
+                {
+                    currentOrgan.GetComponent<Collider>().enabled = false;
+                }
+            }
+            collidersAdjusted = true;
+        }
     }
 
-    void HandleTouch(GameObject touchedObject)
+    void HandleOrganTouch(GameObject touchedObject)
     {
-       
-        
-        if (touchedObject.transform.childCount == 0) {
-            
+
+        if (touchedObject.transform.childCount == 0)
+        {
+
             touchedObject.GetComponent<MeshRenderer>().enabled = true;
         }
         else
         {
             touchedObject.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
             touchedObject.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+        }
+
+        if (currentOrganIndex < organs.Length - 1) currentOrganIndex++;
+        collidersAdjusted = false;
+
+        currentSuccessVisibleTime = successVisibleTime;
+
+    }
+
+    void HandleMissTouch(RaycastHit hit)
+    {
+        Vector3 hitPoint = hit.point;
+        currentCrossVisibleTime = crossVisibleTime;
+        cross.transform.position = hitPoint;
+        cross.SetActive(true);
+    }
+
+    string GetOrganText(GameObject organ)
+    {
+        string organName = organ.transform.name;
+
+        switch (organName)
+        {
+            case "Liver":
+                return "die Leber";
+            case "Heart":
+                return "das Herz";
+            case "Lung":
+                return "die Lunge";
+            case "Kidneys":
+                return "die Nieren";
+            case "Guts":
+                return "den Darm";
+            case "Brain":
+                return "das Gehirn";
+            default:
+                return "[Error in Body.cs]";
         }
     }
 }
