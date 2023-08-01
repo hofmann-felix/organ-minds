@@ -46,30 +46,68 @@ public class SwitchScene : MonoBehaviour
         SceneManager.LoadScene("QuizScene6");
     }
 
-    public void OrganMind1()
+    public void TestScene1()
     {
-        PhotonNetwork.LoadLevel(4);
+        PhotonNetwork.LoadLevel("TestScene1");
     }
 
-    public void QuizMaster1()
+    public void TestScene2()
     {
-        PhotonNetwork.LoadLevel(5);
+        PhotonNetwork.LoadLevel("TestScene2");
     }
 
-    public void OrganMind2()
+    public void TestScene3()
     {
-        PhotonNetwork.LoadLevel(6);
+        PhotonNetwork.LoadLevel("TestScene3");
     }
+
+    public void TestScene4()
+    {
+        PhotonNetwork.LoadLevel("TestScene4");
+    }
+
+    public void TestScene5()
+    {
+        PhotonNetwork.LoadLevel("TestScene5");
+    }
+
+    public void TestScene6()
+    {
+        PhotonNetwork.LoadLevel("TestScene6");
+    }
+
 
     //public void QuizMaster2()
     //{
     //    PhotonNetwork.LoadLevel(7);
     //}
 
-    public void Intermediate()
+    public void Intermediate1()
     {
-        PhotonNetwork.LoadLevel(6);
+        PhotonNetwork.LoadLevel("IntermediateScene1");
     }
+
+    public void Intermediate2()
+    {
+        PhotonNetwork.LoadLevel("IntermediateScene2");
+    }
+
+    public void Intermediate3()
+    {
+        PhotonNetwork.LoadLevel("IntermediateScene3");
+    }
+
+    public void Intermediate4()
+    {
+        PhotonNetwork.LoadLevel("IntermediateScene4");
+    }
+
+    public void Intermediate5()
+    {
+        PhotonNetwork.LoadLevel("IntermediateScene5");
+    }
+
+    
 
 
 }
