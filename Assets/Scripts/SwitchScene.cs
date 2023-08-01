@@ -107,7 +107,12 @@ public class SwitchScene : MonoBehaviour
         PhotonNetwork.LoadLevel("IntermediateScene5");
     }
 
-    
+    public void OrganDetectorMaster()
+    {
+        PhotonNetwork.LoadLevel("HumanBodyTracking3D Quiz Master");
+    }
+
+
 
 
 }
