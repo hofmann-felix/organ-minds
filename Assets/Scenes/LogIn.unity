@@ -1596,7 +1596,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1158326498}
         m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
-        m_MethodName: QuizScene1
+        m_MethodName: RoomsScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
