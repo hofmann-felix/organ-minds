@@ -14,19 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene1.unity
     guid: ea24318c2c1c6410c90a0f9eca407371
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene2.unity
     guid: cc19360fa04e44cc5b194b6fee308251
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene3.unity
     guid: 63c45c8bd79b848abac5ce99655e9aa3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene4.unity
     guid: 30446c01a41d040fbb0c4d06005b5c1d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene5.unity
     guid: 2c2fe99550bfd4d1d87709b259bd45ba
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/QuizScenes/QuizScene6.unity
     guid: 13cf16e1318ff4a88b8ac1cd267cb3cf
   - enabled: 0
