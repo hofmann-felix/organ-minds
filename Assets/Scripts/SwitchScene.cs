@@ -46,6 +46,11 @@ public class SwitchScene : MonoBehaviour
         SceneManager.LoadScene("QuizScene6");
     }
 
+      public void Urkunde(){
+        SceneManager.LoadScene("Urkunde");
+    }
+
+
     public void TestScene1()
     {
         PhotonNetwork.LoadLevel("TestScene1");
