@@ -11,22 +11,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/LogIn.unity
     guid: feca1deb68fa64ddc9a33c8bab32a54c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene1.unity
     guid: ea24318c2c1c6410c90a0f9eca407371
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene2.unity
     guid: cc19360fa04e44cc5b194b6fee308251
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene3.unity
     guid: 63c45c8bd79b848abac5ce99655e9aa3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene4.unity
     guid: 30446c01a41d040fbb0c4d06005b5c1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene5.unity
     guid: 2c2fe99550bfd4d1d87709b259bd45ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScene6.unity
     guid: 13cf16e1318ff4a88b8ac1cd267cb3cf
   - enabled: 0
@@ -215,7 +215,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScene2_Next.unity
     guid: d05bb45501fe7e84ba29c27d2799ad47
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IntermediateScene.unity
     guid: 16634c1dea7fbcb4d8cf689ebb5a09e1
   m_configObjects:

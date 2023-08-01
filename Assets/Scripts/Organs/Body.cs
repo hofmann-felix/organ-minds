@@ -10,9 +10,13 @@ public class Body : MonoBehaviour
     public GameObject kidney;
     public GameObject liver;
     public GameObject lung;
+    public GameObject cross;
 
     //Change me to change the touch phase used.
     TouchPhase touchPhase = TouchPhase.Ended;
+
+    int currentCrossVisibleTime = 0;
+    public int crossVisibleTime = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,8 @@ public class Body : MonoBehaviour
 
         lung.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
         lung.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+
+        cross.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,20 +52,40 @@ public class Body : MonoBehaviour
                 if (hit.collider != null)
                 {
                     GameObject touchedObject = hit.transform.gameObject;
+                    string touchedObjectName = touchedObject.transform.name;
 
-                    Debug.Log("Touched " + touchedObject.transform.name);
-                    HandleTouch(touchedObject);
+                    Debug.Log("Touched " + touchedObjectName);
+
+                    if (touchedObjectName == "Robot Colider")
+                    {
+                        HandleMissTouch(hit);
+                    }
+                    else
+                    {
+                        HandleOrganTouch(touchedObject);
+                    }
                 }
             }
         }
+
+        Debug.Log(currentCrossVisibleTime);
+        if (currentCrossVisibleTime == 0)
+        {
+            cross.SetActive(false);
+            currentCrossVisibleTime--;
+        }
+        else if (currentCrossVisibleTime > 0)
+        {
+            currentCrossVisibleTime--;
+        }
     }
 
-    void HandleTouch(GameObject touchedObject)
+    void HandleOrganTouch(GameObject touchedObject)
     {
-       
-        
-        if (touchedObject.transform.childCount == 0) {
-            
+
+        if (touchedObject.transform.childCount == 0)
+        {
+
             touchedObject.GetComponent<MeshRenderer>().enabled = true;
         }
         else
@@ -67,5 +93,13 @@ public class Body : MonoBehaviour
             touchedObject.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
             touchedObject.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
         }
+    }
+
+    void HandleMissTouch(RaycastHit hit)
+    {
+        Vector3 hitPoint = hit.point;
+        currentCrossVisibleTime = crossVisibleTime;
+        cross.transform.position = hitPoint;
+        cross.SetActive(true);
     }
 }
