@@ -94,7 +94,7 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
-            PhotonNetwork.LoadLevel(9);
+            PhotonNetwork.LoadLevel("Game");
         }
         //if (!PhotonNetwork.IsMasterClient)
         //{
