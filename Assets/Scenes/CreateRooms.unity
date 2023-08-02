@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571337, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Leave Room
+  m_text: Raum verlassen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -2113,7 +2113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -2510,7 +2510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Create Room
+  m_text: Raum erstellen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -3226,7 +3226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Game
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter Roomname...
+  m_text: Raumname
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
