@@ -52,12 +52,12 @@ public class Body : MonoBehaviour
                 if (currentOrganIndex != 6)
                 {
                     Debug.Log("IntermediateScene" + currentOrganIndex);
-                    PhotonNetwork.LoadLevel("IntermediateScene" + currentOrganIndex);
+                    SceneManager.LoadScene("IntermediateScene" + currentOrganIndex);
                 }
                 else
                 {
                     Debug.Log("Urkunde (index:" + currentOrganIndex);
-                    PhotonNetwork.LoadLevel("Urkunde");
+                    SceneManager.LoadScene("Urkunde");
                 }
             }
         }
