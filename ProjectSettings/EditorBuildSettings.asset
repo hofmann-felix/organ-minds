@@ -8,25 +8,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Menu/MenuLoader.unity
     guid: 6688ff74f56714cfeb7c919bcdbfe269
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LogIn.unity
     guid: feca1deb68fa64ddc9a33c8bab32a54c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene1.unity
     guid: ea24318c2c1c6410c90a0f9eca407371
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene2.unity
     guid: cc19360fa04e44cc5b194b6fee308251
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene3.unity
     guid: 63c45c8bd79b848abac5ce99655e9aa3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene4.unity
     guid: 30446c01a41d040fbb0c4d06005b5c1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene5.unity
     guid: 2c2fe99550bfd4d1d87709b259bd45ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizScenes/QuizScene6.unity
     guid: 13cf16e1318ff4a88b8ac1cd267cb3cf
   - enabled: 0
@@ -101,7 +101,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BodyTracking/HumanBodyTracking2D.unity
     guid: b2551dd1f69e7446e9093f0f38e03160
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BodyTracking/HumanBodyTracking3D Quiz Master.unity
     guid: 9fc1f5ed98d414310a8b9e659c295d7c
   - enabled: 1
@@ -194,13 +194,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/StartGame.unity
     guid: f1e9b3f6be620df40bf1da554da9175a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CreateRooms.unity
     guid: dabf8cab2ace5384db7245d8bab6a111
   - enabled: 0
     path: Assets/Scenes/Game2.unity
     guid: 373342628264ee34c868e223c36aa79b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 6709a9547d59ff84782ddd4de4dbef57
   - enabled: 0
@@ -218,19 +218,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScene2_Next.unity
     guid: d05bb45501fe7e84ba29c27d2799ad47
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene1.unity
     guid: 16634c1dea7fbcb4d8cf689ebb5a09e1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene2.unity
     guid: 96ccdb20127d9d149b9d547b282f9452
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene3.unity
     guid: 3f4d55392e57dc1479f7628cea6ea150
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene4.unity
     guid: 00250d2e0f4aee446893a6674ca361e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene5.unity
     guid: 3cd4f7755d4ba324cacc90ccff103640
   - enabled: 0
@@ -248,10 +248,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BodyTracking/HumanBodyTracking3D Organ Detector.unity
     guid: d51a3004bf1ef456aa3de378517753c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Urkunde.unity
     guid: 72663b6f15ccb45a9b928d19c5b5d711
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InterMediateScenes/IntermediateScene6.unity
     guid: e20dd989c4fea4245937c62adb930916
   m_configObjects:
