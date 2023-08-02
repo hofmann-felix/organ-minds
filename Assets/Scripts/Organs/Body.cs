@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class Body : MonoBehaviour
 {
@@ -162,10 +163,14 @@ public class Body : MonoBehaviour
 
     void LoadOrganIndexFromStorage()
     {
+        Debug.Log(SceneManager.GetActiveScene().name);
+        Debug.Log("initialOrganIndex" + initialOrganIndex);
+
         int currentOrganIndexFromLocalStorage = PlayerPrefs.GetInt("currentOrganIndex");
         if (currentOrganIndexFromLocalStorage == 0)
         {
             PlayerPrefs.SetInt("currentOrganIndex", initialOrganIndex + 2);
+            currentOrganIndex = initialOrganIndex;
         }
         else
         {
