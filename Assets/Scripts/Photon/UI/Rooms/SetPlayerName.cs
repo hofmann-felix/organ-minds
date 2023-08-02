@@ -20,5 +20,15 @@ public class SetPlayerName : MonoBehaviour
     void Update()
     {
         PhotonNetwork.LocalPlayer.NickName = _playerName.text;
+        //UtilityScripts.ScoreExtensions.SetScore(0);
+        //ScoreExtensions.SetScore(0);
+        //PhotonNetwork.LocalPlayer.SetScore(0);
+        //int score;
+        //PhotonNetwork.LocalPlayer.AddScore(1);
+        //winBoxPoints.text = PhotonNetwork.LocalPlayer.GetScore().ToString()
+        //score = PhotonNetwork.LocalPlayer.GetScore().ToString();
+
+        //= GetScore(PhotonNetwork.LocalPlayer.this);
+        //print("SCOOREEEEE:  "  + score);
     }
 }

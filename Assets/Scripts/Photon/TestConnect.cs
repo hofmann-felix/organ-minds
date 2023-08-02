@@ -28,6 +28,9 @@ public class TestConnect : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.InLobby)
             // Join Lobby
             PhotonNetwork.JoinLobby();
+
+        int currentScore = PlayerPrefs.GetInt("currentPlayerScore");
+        print("Current SCORE: " + currentScore);
     }
 
 
