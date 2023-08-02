@@ -18298,7 +18298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18381,7 +18381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welches Organ\n ist fuer den Transport von Blut im Menschlichen Koerper
+  m_text: "Welches Organ ist f\xFCr den Transport von Blut im menschlichen K\xF6rper
     verantwortlich?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
