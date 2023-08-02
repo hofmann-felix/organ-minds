@@ -6,7 +6,7 @@ public class Delay : MonoBehaviour
 {
     public void PanelView()
     {
-        StartCoroutine (ShowPanelAfterDelay(5.0f));
+        StartCoroutine (ShowPanelAfterDelay(3.0f));
         }
 
         public GameObject panel2;
