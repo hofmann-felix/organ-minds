@@ -104,6 +104,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BodyTracking/HumanBodyTracking3D Quiz Master.unity
     guid: 9fc1f5ed98d414310a8b9e659c295d7c
+  - enabled: 1
+    path: Assets/Scenes/BodyTracking/HumanBodyTracking3D Organ Detector.unity
+    guid: d51a3004bf1ef456aa3de378517753c2
   - enabled: 0
     path: Assets/Scenes/ImageTracking/BasicImageTracking/BasicImageTracking.unity
     guid: e0b018a3c3b5cfd4c8e316706ec0a18c
