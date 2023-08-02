@@ -45,7 +45,7 @@ public class Body : MonoBehaviour
         if (currentSuccessVisibleTime > 0)
         {
             currentSuccessVisibleTime--;
-            if (currentSuccessVisibleTime == 0) PhotonNetwork.LoadLevel("IntermediateScene1");
+            if (currentSuccessVisibleTime == 0) PhotonNetwork.LoadLevel("IntermediateScene" + currentOrganIndex + 1);
         }
 
         TouchListener();
