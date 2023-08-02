@@ -206,10 +206,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Game 1.unity
     guid: 65154e51b19f422418eeed0318935dcf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene1.unity
     guid: 87a3e9c3498798e43b2f5c816b5a4a5a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene2.unity
     guid: 896fbf6395a024746b954783e1ee41f8
   - enabled: 0
@@ -233,16 +233,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InterMediateScenes/IntermediateScene5.unity
     guid: 3cd4f7755d4ba324cacc90ccff103640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene3.unity
     guid: 405381f7fc576b645a6cd2e3e83ec2d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene4.unity
     guid: 46d598c5479fbc640a8153d47f15cf32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene5.unity
     guid: e356c18abf0732d47b1cd700b0131b9e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/TestScene6.unity
     guid: aa5d2932bc04e7a4180e3939691993c6
   - enabled: 0

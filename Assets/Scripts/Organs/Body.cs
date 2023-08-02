@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Body : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Body : MonoBehaviour
     public GameObject lung;
     public GameObject cross;
     public GameObject currentOrganText;
+    public GameObject organInfos;
+    public GameObject showInfosButton;
     GameObject[] organs = new GameObject[7];
     int currentOrganIndex = 0;
     public int initialOrganIndex = 0;
@@ -48,7 +51,7 @@ public class Body : MonoBehaviour
 
             if (currentSuccessVisibleTime == 0)
             {
-                
+
                 if (currentOrganIndex != 6)
                 {
                     Debug.Log("IntermediateScene" + currentOrganIndex);
@@ -84,8 +87,18 @@ public class Body : MonoBehaviour
         //if (currentOrganIndex < organs.Length - 1) currentOrganIndex++;
         collidersAdjusted = false;
 
-        currentSuccessVisibleTime = successVisibleTime;
+        //currentSuccessVisibleTime = successVisibleTime;
 
+        showInfosButton.SetActive(true);
+        currentOrganText.SetActive(false);
+
+        showInfosButton.transform.GetComponent<Button>().onClick.AddListener(() =>
+        {
+            Debug.Log("Clicked");
+            GameObject organInfo = organInfos.transform.Find(touchedObject.transform.name + "Info").transform.gameObject;
+            organInfo.SetActive(true);
+            showInfosButton.SetActive(false);
+        });
     }
 
     void HandleMissTouch(RaycastHit hit)
@@ -181,6 +194,7 @@ public class Body : MonoBehaviour
         Debug.Log("initialOrganIndex" + initialOrganIndex);
 
         int currentOrganIndexFromLocalStorage = PlayerPrefs.GetInt("currentOrganIndex");
+        Debug.Log("currentOrganIndexFromLocalStorage" + currentOrganIndexFromLocalStorage);
         if (currentOrganIndexFromLocalStorage == 0)
         {
             PlayerPrefs.SetInt("currentOrganIndex", initialOrganIndex + 2);
