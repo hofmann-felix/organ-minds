@@ -34,7 +34,6 @@ public class Body : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        return;
         organs = new GameObject[] { liver, brain, heart, guts, lung, kidney };
         cross.SetActive(false);
 
@@ -45,7 +44,6 @@ public class Body : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        return;
         //success handler
         if (currentSuccessVisibleTime > 0)
         {
