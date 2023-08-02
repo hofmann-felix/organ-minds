@@ -248,6 +248,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BodyTracking/HumanBodyTracking3D Organ Detector.unity
     guid: d51a3004bf1ef456aa3de378517753c2
+  - enabled: 1
+    path: Assets/Scenes/Urkunde.unity
+    guid: 72663b6f15ccb45a9b928d19c5b5d711
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c52d3bb36b4c86f47af54ab9c7a02589,
       type: 2}
