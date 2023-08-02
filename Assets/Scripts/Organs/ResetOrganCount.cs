@@ -9,7 +9,7 @@ public class ResetOrganCount : MonoBehaviour
     {
         PlayerPrefs.SetInt("currentOrganIndex", 0);
         PlayerPrefs.SetInt("currentPlayerScore", 0);
-        PlayerPrefs.SetInt("totalScore", 6);
+        PlayerPrefs.SetInt("totalScore", 400);
     }
 
     // Update is called once per frame
