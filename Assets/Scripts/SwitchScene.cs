@@ -117,5 +117,10 @@ public class SwitchScene : MonoBehaviour
         PhotonNetwork.LoadLevel("HumanBodyTracking3D Organ Detector");
     }
 
+    public void Urkunde()
+    {
+        PhotonNetwork.LoadLevel("Urkunde");
+    }
+
 
 }
