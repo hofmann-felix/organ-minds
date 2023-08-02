@@ -47,9 +47,9 @@ public class Body : MonoBehaviour
             currentSuccessVisibleTime--;
 
             if (currentSuccessVisibleTime == 0) {
-                int sceneIndex = currentOrganIndex + 1;
-                Debug.Log("IntermediateScene" + sceneIndex);
-                PhotonNetwork.LoadLevel("IntermediateScene" + sceneIndex);
+                
+                Debug.Log("IntermediateScene" + currentOrganIndex);
+                PhotonNetwork.LoadLevel("IntermediateScene" + currentOrganIndex);
             }
         }
 
