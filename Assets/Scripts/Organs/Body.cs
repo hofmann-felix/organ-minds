@@ -46,10 +46,19 @@ public class Body : MonoBehaviour
         {
             currentSuccessVisibleTime--;
 
-            if (currentSuccessVisibleTime == 0) {
+            if (currentSuccessVisibleTime == 0)
+            {
                 
-                Debug.Log("IntermediateScene" + currentOrganIndex);
-                PhotonNetwork.LoadLevel("IntermediateScene" + currentOrganIndex);
+                if (currentOrganIndex != 6)
+                {
+                    Debug.Log("IntermediateScene" + currentOrganIndex);
+                    PhotonNetwork.LoadLevel("IntermediateScene" + currentOrganIndex);
+                }
+                else
+                {
+                    Debug.Log("Urkunde (index:" + currentOrganIndex);
+                    PhotonNetwork.LoadLevel("Urkunde");
+                }
             }
         }
 
@@ -71,8 +80,8 @@ public class Body : MonoBehaviour
             touchedObject.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
             touchedObject.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
         }
-
-        if (currentOrganIndex < organs.Length - 1) currentOrganIndex++;
+        currentOrganIndex++;
+        //if (currentOrganIndex < organs.Length - 1) currentOrganIndex++;
         collidersAdjusted = false;
 
         currentSuccessVisibleTime = successVisibleTime;
