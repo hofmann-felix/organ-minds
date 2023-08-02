@@ -691,7 +691,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Level 1
+  m_text: Level 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Level 1
+  m_text: Level 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -1527,7 +1527,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You start the game as \n\nOrganDetector!"
+  m_text: 'Du startest das Spiel als
+
+
+    ORGANDETECTOR!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
@@ -1663,7 +1666,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You start the game as \n\nQuizzMaster!"
+  m_text: 'Du startest das Spiel als
+
+
+    QUIZMASTER!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
