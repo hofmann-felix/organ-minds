@@ -17741,11 +17741,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"Die Leber ist ein echter Superheld in unserem K\xF6rper! Sie kann sich
+  m_text: "Die Leber ist ein echter Superheld in unserem K\xF6rper! Sie kann sich
     selbst heilen, wenn sie verletzt oder krank wird. Sogar wenn ein kleiner Teil
     der Leber besch\xE4digt ist, kann sie nachwachsen und wieder ganz gesund werden.
     Das macht die Leber zu einem erstaunlichen Organ, das uns dabei hilft, stark
-    und fit zu bleiben!\""
+    und fit zu bleiben!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
