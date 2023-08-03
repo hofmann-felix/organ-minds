@@ -9,9 +9,14 @@ public class ScreenShot : MonoBehaviour
     private IEnumerator Screenshot(){
 
         yield return new WaitForEndOfFrame();
-        Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
 
-        texture.ReadPixels(new Rect(0, 0, Screen.width , Screen.height), 0, 0);
+        var width = 815;
+        var height = 1705;
+        var startX = 178;
+        var startY = 400;
+        Texture2D texture = new Texture2D(width, height, TextureFormat.RGB24, false);
+
+        texture.ReadPixels(new Rect(startX, startY, width , height), 0, 0);
         texture.Apply();
 
         string name = "Screenshot_EpicApp" + System.DateTime.Now.ToString("yyy-MM-dd-HH-mm-ss") + ".png";
