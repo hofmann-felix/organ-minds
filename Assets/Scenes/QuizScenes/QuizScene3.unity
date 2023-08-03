@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571337, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18425,7 +18425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welches Organ\n ist fuer den Transport von Blut im Menschlichen Koerper
+  m_text: "Welches Organ\n ist f\xFCr den Transport von Blut im Menschlichen K\xF6rper
     verantwortlich?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
@@ -19421,10 +19421,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Wusstest du, dass das Herz etwa 100.000 Mal am Tag schlaegt? Und in einem
-    ganzen Leben schl\xE4gt das Herz mehr als 2,5 Milliarden Mal! Das macht es zu
-    einem der h\xE4rtesten arbeitenden Organe in unserem K\xF6rper. Also denk daran,
-    dein Herz gut zu pflegen und es gesund zu halten."
+  m_text: "Wusstest du, dass das Herz etwa 100.000 Mal am Tag schl\xE4gt? Und in
+    einem ganzen Leben schl\xE4gt das Herz mehr als 2,5 Milliarden Mal! Das macht
+    es zu einem der h\xE4rtesten arbeitenden Organe in unserem K\xF6rper. Also denk
+    daran, dein Herz gut zu pflegen und es gesund zu halten."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54bf57ea9a03b400b99a8aa11519237b, type: 2}
   m_sharedMaterial: {fileID: -5463610734598942235, guid: 54bf57ea9a03b400b99a8aa11519237b,
