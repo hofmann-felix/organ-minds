@@ -10,15 +10,9 @@ public class ShowRoomName : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _roomName;
 
-    bool isSet = false;
-
-    void Update()
+    void Start()
     {
-        if (!isSet)
-        {
-            _roomName.text = PhotonNetwork.CurrentRoom.Name;
-            isSet = true;
-        }
+        _roomName.text = PhotonNetwork.CurrentRoom.Name;
     }
 
 }
